@@ -1,0 +1,52 @@
+
+
+  <div class="container">
+
+
+
+
+      <div class="container-fluid">
+          <h1>
+              Employee  Punches
+              </h1>
+              <br />
+          Filter by month : 
+          
+          <select [(ngModel)]="selectedTemplate"> 
+              <option *ngFor="let processTemplate of processTemplates">{{processTemplate.name}}</option>
+            </select>
+            <br />
+          
+              <br />
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Sr. No.</th>
+                  <th>Punch Date and Time</th>
+                  <th>Punch Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr  *ngFor="let myresult of resultarr; let i = index">
+                  <td> {{i+1}}</td>
+                  <td>{{myresult.punchdatetime}} </td>
+                  <td> {{myresult.punchtype}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+     
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <router-outlet></router-outlet>
+  </div>

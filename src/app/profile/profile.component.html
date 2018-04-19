@@ -1,0 +1,42 @@
+
+      <div class="container">
+<div class="container-fluid">
+  <h1>
+    Profile Page
+  </h1>
+<br />
+  <div class="col-sm-12">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">First Name</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{firstname}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Middle Name</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{ middlename == '' ? 'NA' : middlename }}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Last Name</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{lastname}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Contact No.</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{contactno}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Email Id</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{emailid}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Employee Code</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{employeecode}}</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Employee ID</div>
+    <div class="col-sm-8" style="background-color:lavender;">{{employeeid}}</div>
+  </div>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+</div>
